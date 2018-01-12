@@ -47,7 +47,6 @@ public class CustomItems implements Listener {
 		r.setIngredient('$', Material.STICK);
 
 		plugin.getServer().addRecipe(r);
-
 	}
 
 	public void unshaped() {

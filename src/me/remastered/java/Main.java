@@ -10,8 +10,12 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		getServer().getPluginManager().registerEvents(new onInteractEvent(), this);
-		getServer().getPluginManager().registerEvents(new CustomItems(), this);
 		loadConfig();
+		
+		CustomItems items = new CustomItems();
+		items.customRecipe();
+		items.unshaped();
+
 	}
 
 	@Override

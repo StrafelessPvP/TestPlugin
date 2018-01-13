@@ -13,7 +13,7 @@ public class CustomItemShop implements Listener {
 	private Plugin plugin = Main.getPlugin(Main.class);
 	
 	public void newInventory(Player player){
-		Inventory i = plugin.getServer().createInventory(null,27, ChatColor.DARK_GREEN + "CustomItemShop");
+		Inventory i = plugin.getServer().createInventory(null,9, ChatColor.DARK_GREEN + "CustomItemShop");
 		player.openInventory(i);
 		//ToDo create the item
 	}

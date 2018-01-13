@@ -2,3 +2,7 @@ name: Remastered
 author: StrafelessPvP
 main: me.remastered.java.Main
 version: 1.1
+
+commands:
+    customitem:
+        usage: /<command>

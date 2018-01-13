@@ -1,7 +1,9 @@
 package me.remastered.java;
 
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.remastered.java.Commands.CustomItemCMD;
 import me.remastered.java.Events.EventClass;
 import me.remastered.java.Events.onInteractEvent;
 import me.remastered.java.Events.onJoinEvent;
@@ -14,6 +16,8 @@ public class Main extends JavaPlugin {
 	public void onEnable() {
 		loadConfig();
 		Events();
+		
+		this.getCommand("customitem").setExecutor((CommandExecutor)new CustomItemCMD());
 
 		CustomItems items = new CustomItems();
 		items.customRecipe();
